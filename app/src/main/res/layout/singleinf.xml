@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CACEE">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/nowstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:text="@string/uploadTitle"/>
+                        <TextView
+                            android:id="@+id/ShowTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingLeft="2dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:text="@string/uploadName"/>
+                        <TextView
+                            android:id="@+id/ShowName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingLeft="2dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:text="@string/uploadContent"/>
+                        <TextView
+                            android:id="@+id/ShowContect"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingLeft="2dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:text="@string/uploadPic"/>
+                        <ImageView
+                            android:id="@+id/Showpic"
+                            android:layout_width="150dp"
+                            android:layout_height= "150dp"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_margin"
+                        android:layout_marginRight="@dimen/card_margin"
+                        android:layout_marginBottom="@dimen/card_margin">
+
+                        <LinearLayout
+                            style="@style/Widget.CardContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+                                <Button
+                                    android:id="@+id/delete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/delete"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+                                <Button
+                                    android:id="@+id/returnAct"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/returnActivity"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

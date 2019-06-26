@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/showwork"
+        android:orderInCategory="100"
+        android:title="@string/records"
+        android:icon="@drawable/record"
+        app:showAsAction="never|withText" />
+    <item
+        android:id="@+id/startwork"
+        android:title="@string/startwork"
+        android:icon="@drawable/updata"
+        app:showAsAction="never|withText"/>
+
+</menu>

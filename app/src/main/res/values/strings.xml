@@ -1,0 +1,18 @@
+<resources>
+    <!--首页-->
+    <string name="app_name">智慧城管</string>
+    <string name="records">历史纪录</string>
+    <string name="startwork">违规上传</string>
+    <!--上传信息-->
+    <string name="uploadTitle">上报标题</string>
+    <string name="inputTitle">请输入标题</string>
+    <string name="uploadName">上报人</string>
+    <string name="inputName">请输入上报人姓名</string>
+    <string name="uploadContent">上报内容</string>
+    <string name="inputContent">请输入上报内容</string>
+    <string name="uploadPic">上报图片</string>
+    <string name="inputPic">选择图片</string>
+    <string name="inputInf">提交</string>
+    <string name="returnActivity">返回</string>
+    <string name="delete">删除</string>
+</resources>
